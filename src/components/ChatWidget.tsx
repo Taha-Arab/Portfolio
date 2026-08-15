@@ -21,6 +21,12 @@ export default function ChatWidget() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, loading]);
 
+  useEffect(() => {
+    const openTwin = () => setOpen(true);
+    window.addEventListener("open-digital-twin", openTwin);
+    return () => window.removeEventListener("open-digital-twin", openTwin);
+  }, []);
+
   async function send() {
     const trimmed = input.trim();
     if (!trimmed || loading) return;

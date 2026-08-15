@@ -8,6 +8,9 @@ export type ShowcaseItem = {
   metricLabel: string;
   summary: string;
   tools: string[];
+  link?: string;
+  linkLabel?: string;
+  featured?: boolean;
   drawer: {
     heading: string;
     body: DrawerSection[];
@@ -23,11 +26,12 @@ export const showcaseItems: ShowcaseItem[] = [
   {
     slug: "ineos-hotbox-bearing",
     kind: "experience",
+    featured: true,
     title: "Hotbox Bearing Redesign",
     org: "INEOS — Engineering Intern",
     period: "May 2025 – August 2025",
-    metric: "Plant-Wide",
-    metricLabel: "Standard adopted",
+    metric: "Adopted Plant-Wide",
+    metricLabel: "New standard for every hotbox",
     summary:
       "Root-caused a recurring seizure failure on hotbox vent joints and redesigned the bearing interface — approved by plant management as the standard build for every new hotbox on site.",
     tools: ["Root Cause Analysis", "Bearing Design", "Preventive Maintenance", "Plant Operations"],
@@ -65,6 +69,57 @@ export const showcaseItems: ShowcaseItem[] = [
           bullets: [
             "Shadowed the maintenance team on preventive maintenance across plant equipment, including winch PM and cable replacement, bucket lift operations, and compressor motor belt changeout.",
             "Toured and observed facility operations — PP3, PP4, rail car loading, and the cogeneration unit — for broader plant and process exposure.",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    slug: "outpost-fps",
+    kind: "project",
+    featured: true,
+    title: "Outpost — Tactical Arena FPS",
+    org: "Personal Project — Solo Developer",
+    period: "Self-directed, ongoing",
+    metric: "~9K",
+    metricLabel: "Lines of custom JS",
+    summary:
+      "A browser-native tactical shooter built from scratch with Three.js and Rapier — no game engine, no backend. Custom physics-based movement, hitscan combat, and team-based AI opponents across 1v1 to 5v5 matches, shipped as a static site.",
+    tools: [
+      "Three.js",
+      "Rapier Physics",
+      "Custom Character Controller",
+      "Combat AI",
+      "Procedural Textures",
+      "Web Audio API",
+    ],
+    link: "https://outpostfps.vercel.app",
+    linkLabel: "Play it here",
+    drawer: {
+      heading: "Outpost — Tactical Arena FPS",
+      body: [
+        {
+          label: "Architecture",
+          bullets: [
+            "Fully client-side: Vite, Three.js, and Rapier physics — no server or database, ships as a static site.",
+            "~9,000 lines of custom JavaScript across gameplay, environment, animation, and AI systems.",
+            "Async asset pipeline loads and caches character and weapon models, with automatic fallback to procedural geometry if a load ever fails.",
+          ],
+        },
+        {
+          label: "Combat & AI",
+          bullets: [
+            "Built a physics-based character controller with sprint, crouch, and a momentum-preserving slide.",
+            "Designed a single shared bot AI — difficulty scales by reaction time, aim, and movement — that takes cover, tracks line of sight, and fights on teams across 1v1 to 5v5 matches.",
+            "Hitscan weapon system with dedicated headshot detection and separate hip-fire / aim-down-sights accuracy.",
+          ],
+        },
+        {
+          label: "Rendering & Audio",
+          bullets: [
+            "Every environment texture and normal map is generated procedurally at runtime — zero image assets.",
+            "All sound effects (gunfire, footsteps, hits) are synthesized live with the Web Audio API, including spatial audio for bot positioning.",
+            "Custom first-person viewmodel with animation blending, weapon sway, and aim-down-sights lag.",
           ],
         },
       ],
@@ -192,31 +247,6 @@ export const showcaseItems: ShowcaseItem[] = [
           bullets: [
             "Numerical methods in MATLAB: root-finding, numerical integration, polynomial interpolation, iterative linear solvers.",
             "Applied linear algebra and matrix operations computationally — relevant to eigenvector-based techniques, simulation, and regression.",
-          ],
-        },
-      ],
-    },
-  },
-  {
-    slug: "experimental-methods-lab",
-    kind: "project",
-    title: "Experimental Methods & Lab",
-    org: "Coursework — Signal & Data Analysis",
-    period: "University of Houston",
-    metric: "R²",
-    metricLabel: "Regression analysis",
-    summary:
-      "Characterized frequency response of electronic filters and proximity probe signals, then applied regression analysis to vibration and stress datasets.",
-    tools: ["Signal Analysis", "Regression", "Vibration Measurement"],
-    drawer: {
-      heading: "Experimental Methods & Lab",
-      body: [
-        {
-          label: "What I Did",
-          bullets: [
-            "Characterized the frequency response of electronic filters and analyzed proximity probe signals.",
-            "Performed regression analysis on experimental datasets.",
-            "Conducted vibration and stress measurements.",
           ],
         },
       ],
