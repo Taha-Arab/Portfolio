@@ -15,11 +15,19 @@ export default function Home() {
           <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
             Taha Arab
           </span>
-          <nav className="hidden sm:flex gap-6 text-sm text-neutral-400">
+          <nav className="hidden sm:flex items-center gap-6 text-sm text-neutral-400">
             <a href="#work" className="hover:text-neutral-100 transition-colors">Work</a>
             <a href="#about" className="hover:text-neutral-100 transition-colors">About</a>
             <a href="#skills" className="hover:text-neutral-100 transition-colors">Skills</a>
             <a href="#contact" className="hover:text-neutral-100 transition-colors">Contact</a>
+            <a
+              href="/Taha_Arab_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-neutral-700 px-4 py-1.5 text-neutral-200 hover:border-neutral-500 hover:text-neutral-50 transition-colors"
+            >
+              Résumé
+            </a>
           </nav>
         </div>
       </header>
@@ -222,6 +230,17 @@ export default function Home() {
               className="hover:text-neutral-50 transition-colors"
             >
               linkedin.com/in/taha-arab
+            </a>
+          </div>
+          <div className="mt-8">
+            <a
+              href="/Taha_Arab_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-neutral-50 text-neutral-900 px-6 py-3 text-sm font-medium hover:bg-neutral-200 transition-colors"
+            >
+              Download Résumé
+              <span aria-hidden>↓</span>
             </a>
           </div>
         </Reveal>
