@@ -16,7 +16,7 @@ export default function ShowcaseGrid({ items }: { items: ShowcaseItem[] }) {
             delay={(i % 4) * 80}
             className={item.featured ? "md:col-span-2" : ""}
           >
-          <div className="group flex flex-col text-left w-full h-full rounded-xl border border-neutral-800 bg-neutral-950 hover:border-neutral-600 transition-colors overflow-hidden">
+          <div className="group flex flex-col text-left w-full h-full rounded-xl border border-neutral-800 bg-neutral-950 hover:border-sky-500 transition-colors overflow-hidden">
             <button
               onClick={() => setActive(item)}
               className="flex flex-col text-left w-full flex-1"
@@ -30,7 +30,7 @@ export default function ShowcaseGrid({ items }: { items: ShowcaseItem[] }) {
                     {item.metricLabel}
                   </div>
                 </div>
-                <span className="shrink-0 rounded-full border border-neutral-700 px-3 py-1 text-xs text-neutral-400 group-hover:border-neutral-500 group-hover:text-neutral-200 transition-colors">
+                <span className="shrink-0 rounded-full border border-neutral-700 px-3 py-1 text-xs text-neutral-400 group-hover:border-sky-500 group-hover:text-sky-300 group-hover:bg-sky-500/10 transition-colors">
                   View details
                 </span>
               </div>
@@ -43,7 +43,7 @@ export default function ShowcaseGrid({ items }: { items: ShowcaseItem[] }) {
                   {item.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400"
+                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400 group-hover:border-sky-800 group-hover:text-sky-300 transition-colors"
                     >
                       {tool}
                     </span>
@@ -108,7 +108,7 @@ function Drawer({ item, onClose }: { item: ShowcaseItem | null; onClose: () => v
               <button
                 onClick={onClose}
                 aria-label="Close"
-                className="shrink-0 rounded-full border border-neutral-700 h-10 w-10 flex items-center justify-center text-neutral-400 hover:text-neutral-100 hover:border-neutral-500 transition-colors"
+                className="shrink-0 rounded-full border border-neutral-700 h-10 w-10 flex items-center justify-center text-neutral-400 hover:text-sky-300 hover:border-sky-500 transition-colors"
               >
                 ✕
               </button>
