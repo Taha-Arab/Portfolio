@@ -16,7 +16,16 @@ export default function ShowcaseGrid({ items }: { items: ShowcaseItem[] }) {
             delay={(i % 4) * 80}
             className={item.featured ? "md:col-span-2" : ""}
           >
-          <div className="group flex flex-col text-left w-full h-full rounded-xl border border-neutral-800 bg-neutral-950 hover:border-sky-500 transition-colors overflow-hidden">
+          <div className="group relative isolate flex flex-col text-left w-full h-full rounded-xl border border-neutral-800 bg-neutral-950 hover:border-sky-500 transition-colors overflow-hidden">
+            {item.bgImage && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={item.bgImage}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 -z-10 h-full w-full object-cover opacity-[0.18] transition-opacity duration-300 group-hover:opacity-[0.28]"
+              />
+            )}
             <button
               onClick={() => setActive(item)}
               className="flex flex-col text-left w-full flex-1"

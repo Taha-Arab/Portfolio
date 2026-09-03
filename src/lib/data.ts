@@ -11,6 +11,7 @@ export type ShowcaseItem = {
   link?: string;
   linkLabel?: string;
   featured?: boolean;
+  bgImage?: string;
   drawer: {
     heading: string;
     body: DrawerSection[];
@@ -27,6 +28,7 @@ export const showcaseItems: ShowcaseItem[] = [
     slug: "ineos-hotbox-bearing",
     kind: "experience",
     featured: true,
+    bgImage: "/diagrams/thrust-needle-bearing.svg",
     title: "Hotbox Bearing Redesign",
     org: "INEOS — Engineering Intern",
     period: "May 2025 – August 2025",
