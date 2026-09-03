@@ -143,14 +143,14 @@ export default function Home() {
           {skillGroups.map((group, i) => (
             <Reveal key={group.title} delay={(i % 4) * 80}>
               <div className="group rounded-xl border border-neutral-800 hover:border-sky-500 p-6 md:p-8 h-full transition-colors">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-300">
+                <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-300 group-hover:text-neutral-50 transition-colors">
                   {group.title}
                 </h3>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400 group-hover:border-sky-500 group-hover:text-sky-300 group-hover:bg-sky-500/10 transition-colors"
+                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400 group-hover:border-neutral-600 group-hover:text-neutral-200 transition-colors"
                     >
                       {item}
                     </span>
