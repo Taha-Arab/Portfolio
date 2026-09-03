@@ -1,60 +1,83 @@
-<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#7dd3fc" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Shaft axis -->
-  <line x1="300" y1="20" x2="300" y2="420" stroke-dasharray="2 6" stroke-width="1" opacity="0.6" />
+<svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#7dd3fc" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(260 260)">
+    <!-- centerlines -->
+    <line x1="-250" y1="0" x2="250" y2="0" stroke-dasharray="1 5" stroke-width="0.8" opacity="0.45" />
+    <line x1="0" y1="-250" x2="0" y2="250" stroke-dasharray="1 5" stroke-width="0.8" opacity="0.45" />
 
-  <!-- Exploded stack, front-on ellipses, top to bottom: washer, needle bearing, washer -->
-  <!-- Top thrust washer -->
-  <g opacity="0.95">
-    <ellipse cx="300" cy="90" rx="150" ry="42" />
-    <ellipse cx="300" cy="90" rx="46" ry="13" />
-  </g>
+    <!-- outer race -->
+    <circle r="220" opacity="0.9" />
+    <circle r="205" stroke-width="0.9" opacity="0.55" />
 
-  <!-- connecting lines -->
-  <line x1="150" y1="90" x2="150" y2="180" opacity="0.5" />
-  <line x1="450" y1="90" x2="450" y2="180" opacity="0.5" />
-  <line x1="254" y1="90" x2="254" y2="180" opacity="0.3" />
-  <line x1="346" y1="90" x2="346" y2="180" opacity="0.3" />
+    <!-- cage bounds -->
+    <circle r="180" stroke-width="0.9" opacity="0.6" />
+    <circle r="110" stroke-width="0.9" opacity="0.6" />
 
-  <!-- Needle bearing cage with rollers -->
-  <g opacity="0.95">
-    <ellipse cx="300" cy="210" rx="150" ry="42" />
-    <ellipse cx="300" cy="210" rx="46" ry="13" />
-    <!-- needle rollers radiating around the race -->
-    <g stroke-width="1.6">
-      <line x1="300" y1="172" x2="300" y2="182" />
-      <line x1="252" y1="176" x2="255" y2="186" />
-      <line x1="208" y1="188" x2="214" y2="197" />
-      <line x1="175" y1="205" x2="183" y2="211" />
-      <line x1="175" y1="215" x2="183" y2="209" />
-      <line x1="208" y1="232" x2="214" y2="223" />
-      <line x1="252" y1="244" x2="255" y2="234" />
-      <line x1="300" y1="248" x2="300" y2="238" />
-      <line x1="348" y1="244" x2="345" y2="234" />
-      <line x1="392" y1="232" x2="386" y2="223" />
-      <line x1="425" y1="215" x2="417" y2="209" />
-      <line x1="425" y1="205" x2="417" y2="211" />
-      <line x1="392" y1="188" x2="386" y2="197" />
-      <line x1="348" y1="176" x2="345" y2="186" />
+    <!-- inner race / bore -->
+    <circle r="90" opacity="0.9" />
+    <circle r="46" opacity="0.9" />
+
+    <!-- bolt-circle rivets on outer race -->
+    <g opacity="0.5">
+      <circle cx="0" cy="-212.5" r="3.2" />
+      <circle cx="150.3" cy="-150.3" r="3.2" />
+      <circle cx="212.5" cy="0" r="3.2" />
+      <circle cx="150.3" cy="150.3" r="3.2" />
+      <circle cx="0" cy="212.5" r="3.2" />
+      <circle cx="-150.3" cy="150.3" r="3.2" />
+      <circle cx="-212.5" cy="0" r="3.2" />
+      <circle cx="-150.3" cy="-150.3" r="3.2" />
+    </g>
+
+    <!-- needle rollers, radial spokes between cage bounds -->
+    <g stroke-width="4.2" stroke-linecap="round" opacity="0.95">
+      <!-- 28 rollers evenly spaced -->
     </g>
   </g>
 
-  <!-- connecting lines -->
-  <line x1="150" y1="210" x2="150" y2="300" opacity="0.5" />
-  <line x1="450" y1="210" x2="450" y2="300" opacity="0.5" />
-  <line x1="254" y1="210" x2="254" y2="300" opacity="0.3" />
-  <line x1="346" y1="210" x2="346" y2="300" opacity="0.3" />
-
-  <!-- Bottom thrust washer -->
-  <g opacity="0.95">
-    <ellipse cx="300" cy="330" rx="150" ry="42" />
-    <ellipse cx="300" cy="330" rx="46" ry="13" />
+  <!-- roller field generated as individual radial lines -->
+  <g transform="translate(260 260)" stroke-width="4.4" opacity="0.95">
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(0)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(12.857)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(25.714)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(38.571)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(51.429)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(64.286)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(77.143)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(90)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(102.857)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(115.714)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(128.571)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(141.429)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(154.286)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(167.143)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(180)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(192.857)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(205.714)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(218.571)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(231.429)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(244.286)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(257.143)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(270)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(282.857)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(295.714)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(308.571)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(321.429)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(334.286)" />
+    <line x1="0" y1="-180" x2="0" y2="-110" transform="rotate(347.143)" />
   </g>
 
-  <!-- axial load arrows -->
-  <g opacity="0.7">
-    <line x1="120" y1="20" x2="120" y2="70" />
-    <path d="M112 62 L120 76 L128 62" />
-    <line x1="480" y1="400" x2="480" y2="350" />
-    <path d="M472 358 L480 344 L488 358" />
+  <!-- diameter dimension line + arrows, lower right -->
+  <g opacity="0.6" stroke-width="1">
+    <line x1="150" y1="480" x2="370" y2="480" />
+    <path d="M156 475 L148 480 L156 485" />
+    <path d="M364 475 L372 480 L364 485" />
+    <line x1="150" y1="465" x2="150" y2="495" stroke-width="0.8" opacity="0.7" />
+    <line x1="370" y1="465" x2="370" y2="495" stroke-width="0.8" opacity="0.7" />
+  </g>
+
+  <!-- small crosshair at center -->
+  <g transform="translate(260 260)" opacity="0.8" stroke-width="0.9">
+    <line x1="-8" y1="0" x2="8" y2="0" />
+    <line x1="0" y1="-8" x2="0" y2="8" />
   </g>
 </svg>
