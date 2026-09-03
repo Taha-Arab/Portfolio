@@ -91,11 +91,21 @@ export default function ChatWidget() {
       <button
         onClick={() => setOpen(true)}
         aria-label="Open chat with Taha's digital twin"
-        className={`fixed bottom-5 right-5 md:bottom-8 md:right-8 z-40 h-14 w-14 rounded-full bg-neutral-50 text-neutral-900 shadow-lg flex items-center justify-center text-xl font-medium transition-transform hover:scale-105 ${
+        className={`fixed bottom-5 right-5 md:bottom-8 md:right-8 z-40 h-14 w-14 rounded-full bg-sky-500 text-neutral-950 shadow-lg flex items-center justify-center transition-transform hover:scale-105 ${
           open ? "scale-0" : "scale-100"
         }`}
       >
-        💬
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.8 3.8a.5.5 0 0 1-.8-.4V16h-.7A2.5 2.5 0 0 1 4 13.5v-8Z"
+            stroke="currentColor"
+            strokeWidth="1.75"
+            strokeLinejoin="round"
+          />
+          <circle cx="8.5" cy="9.5" r="1.1" fill="currentColor" />
+          <circle cx="12" cy="9.5" r="1.1" fill="currentColor" />
+          <circle cx="15.5" cy="9.5" r="1.1" fill="currentColor" />
+        </svg>
       </button>
 
       {/* Chat panel */}
@@ -128,7 +138,7 @@ export default function ChatWidget() {
             <button
               onClick={() => setOpen(false)}
               aria-label="Close chat"
-              className="h-9 w-9 rounded-full border border-neutral-700 flex items-center justify-center text-neutral-400 hover:text-neutral-100 hover:border-neutral-500 transition-colors"
+              className="h-9 w-9 rounded-full border border-neutral-700 flex items-center justify-center text-neutral-400 hover:text-sky-300 hover:border-sky-500 transition-colors"
             >
               ✕
             </button>
@@ -143,7 +153,7 @@ export default function ChatWidget() {
                 <div
                   className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed whitespace-pre-wrap ${
                     m.role === "user"
-                      ? "bg-neutral-50 text-neutral-900 rounded-br-sm"
+                      ? "bg-sky-500 text-neutral-950 rounded-br-sm"
                       : "bg-neutral-900 text-neutral-200 border border-neutral-800 rounded-bl-sm"
                   }`}
                 >
@@ -164,13 +174,13 @@ export default function ChatWidget() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask about the INEOS project..."
-              className="flex-1 rounded-full bg-neutral-900 border border-neutral-800 px-4 py-2.5 text-sm text-neutral-100 placeholder:text-neutral-500 outline-none focus:border-neutral-600"
+              className="flex-1 rounded-full bg-neutral-900 border border-neutral-800 px-4 py-2.5 text-sm text-neutral-100 placeholder:text-neutral-500 outline-none focus:border-sky-500"
             />
             <button
               type="submit"
               disabled={loading || !input.trim()}
               aria-label="Send message"
-              className="h-10 w-10 shrink-0 rounded-full bg-neutral-50 text-neutral-900 flex items-center justify-center disabled:opacity-40 transition-opacity"
+              className="h-10 w-10 shrink-0 rounded-full bg-sky-500 text-neutral-950 flex items-center justify-center disabled:opacity-40 transition-opacity"
             >
               ↑
             </button>

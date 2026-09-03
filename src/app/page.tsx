@@ -16,15 +16,15 @@ export default function Home() {
             Taha Arab
           </span>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-neutral-400">
-            <a href="#work" className="hover:text-neutral-100 transition-colors">Work</a>
-            <a href="#about" className="hover:text-neutral-100 transition-colors">About</a>
-            <a href="#skills" className="hover:text-neutral-100 transition-colors">Skills</a>
-            <a href="#contact" className="hover:text-neutral-100 transition-colors">Contact</a>
+            <a href="#work" className="hover:text-sky-400 transition-colors">Work</a>
+            <a href="#about" className="hover:text-sky-400 transition-colors">About</a>
+            <a href="#skills" className="hover:text-sky-400 transition-colors">Skills</a>
+            <a href="#contact" className="hover:text-sky-400 transition-colors">Contact</a>
             <a
               href="/Taha_Arab_Resume.pdf"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-neutral-700 px-4 py-1.5 text-neutral-200 hover:border-neutral-500 hover:text-neutral-50 transition-colors"
+              className="rounded-full border border-neutral-700 px-4 py-1.5 text-neutral-200 hover:border-sky-500 hover:text-sky-300 transition-colors"
             >
               Résumé
             </a>
@@ -55,13 +55,13 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#work"
-              className="rounded-full bg-neutral-50 text-neutral-900 px-6 py-3 text-sm font-medium hover:bg-neutral-200 transition-colors"
+              className="rounded-full bg-sky-500 text-neutral-950 px-6 py-3 text-sm font-medium hover:bg-sky-400 transition-colors"
             >
               View my work
             </a>
             <a
               href="mailto:tahaarab05@gmail.com"
-              className="rounded-full border border-neutral-700 px-6 py-3 text-sm font-medium hover:border-neutral-500 transition-colors"
+              className="rounded-full border border-neutral-700 px-6 py-3 text-sm font-medium hover:border-sky-500 hover:text-sky-300 transition-colors"
             >
               Get in touch
             </a>
@@ -142,7 +142,7 @@ export default function Home() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillGroups.map((group, i) => (
             <Reveal key={group.title} delay={(i % 4) * 80}>
-              <div className="rounded-xl border border-neutral-800 p-6 md:p-8 h-full">
+              <div className="group rounded-xl border border-neutral-800 hover:border-sky-500 p-6 md:p-8 h-full transition-colors">
                 <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-300">
                   {group.title}
                 </h3>
@@ -150,7 +150,7 @@ export default function Home() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400"
+                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400 group-hover:border-sky-800 group-hover:text-sky-300 transition-colors"
                     >
                       {item}
                     </span>
@@ -170,7 +170,7 @@ export default function Home() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           {leadership.map((item, i) => (
             <Reveal key={item.org} delay={(i % 4) * 80}>
-              <div className="rounded-xl border border-neutral-800 p-6 md:p-8 h-full">
+              <div className="rounded-xl border border-neutral-800 hover:border-sky-500 p-6 md:p-8 h-full transition-colors">
                 <p className="text-xs uppercase tracking-widest text-neutral-500">{item.period}</p>
                 <h3 className="mt-2 text-lg font-medium text-neutral-50">{item.org}</h3>
                 <p className="mt-1 text-sm text-neutral-400">{item.role}</p>
@@ -198,7 +198,7 @@ export default function Home() {
             {honors.map((h) => (
               <li
                 key={h}
-                className="flex gap-3 text-neutral-300 border-b border-neutral-900 pb-3"
+                className="flex gap-3 text-neutral-300 hover:text-sky-300 border-b border-neutral-900 pb-3 transition-colors"
               >
                 <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-neutral-600" />
                 <span>{h}</span>
@@ -217,17 +217,17 @@ export default function Home() {
             Reach out directly, or ask my digital twin in the chat widget below.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 text-neutral-300">
-            <a href="mailto:tahaarab05@gmail.com" className="hover:text-neutral-50 transition-colors">
+            <a href="mailto:tahaarab05@gmail.com" className="hover:text-sky-400 transition-colors">
               tahaarab05@gmail.com
             </a>
-            <a href="tel:+18327696022" className="hover:text-neutral-50 transition-colors">
+            <a href="tel:+18327696022" className="hover:text-sky-400 transition-colors">
               (832) 769-6022
             </a>
             <a
               href="https://www.linkedin.com/in/taha-arab"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-neutral-50 transition-colors"
+              className="hover:text-sky-400 transition-colors"
             >
               linkedin.com/in/taha-arab
             </a>
@@ -237,7 +237,7 @@ export default function Home() {
               href="/Taha_Arab_Resume.pdf"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-neutral-50 text-neutral-900 px-6 py-3 text-sm font-medium hover:bg-neutral-200 transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-sky-500 text-neutral-950 px-6 py-3 text-sm font-medium hover:bg-sky-400 transition-colors"
             >
               Download Résumé
               <span aria-hidden>↓</span>
