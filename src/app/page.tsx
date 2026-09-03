@@ -41,14 +41,14 @@ export default function Home() {
         </Reveal>
         <Reveal delay={80}>
           <h1 className="mt-6 text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1] max-w-3xl">
-            Generalist mechanical engineer with hands-on fabrication and technical computing skills.
+            Mechanical engineer with hands-on fabrication and technical computing skills.
           </h1>
         </Reveal>
         <Reveal delay={160}>
           <p className="mt-6 text-lg text-neutral-400 max-w-2xl leading-relaxed">
-            Senior at the University of Houston, Cullen College of Engineering. Open to roles across
-            aerospace, energy, medical devices, and tech — I flex toward whatever a team is building,
-            backed by real fabrication, testing, and computational engineering experience.
+            Senior at the University of Houston, Cullen College of Engineering. Equipped to step into
+            whatever a team is building, backed by real fabrication, testing, and computational
+            engineering experience.
           </p>
         </Reveal>
         <Reveal delay={240}>
