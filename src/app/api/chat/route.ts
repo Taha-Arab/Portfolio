@@ -4,7 +4,7 @@ import { buildSystemPrompt } from "@/lib/twin-prompt";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const MODEL = "openai/gpt-oss-20b:free";
+const MODEL = "openai/gpt-4o-mini";
 const ENDPOINT = "https://openrouter.ai/api/v1/chat/completions";
 
 const MAX_MESSAGE_LENGTH = 1200;
@@ -92,9 +92,6 @@ export async function POST(request: NextRequest) {
         model: MODEL,
         stream: true,
         temperature: 0.4,
-        // gpt-oss spends tokens on reasoning before it emits any answer text,
-        // so keep the effort low and leave headroom in the budget.
-        reasoning: { effort: "low" },
         max_tokens: 1400,
         messages: [{ role: "system", content: buildSystemPrompt() }, ...messages],
       }),
