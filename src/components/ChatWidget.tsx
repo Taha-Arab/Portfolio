@@ -91,11 +91,22 @@ export default function ChatWidget() {
       <button
         onClick={() => setOpen(true)}
         aria-label="Open chat with Taha's digital twin"
-        className={`fixed bottom-5 right-5 md:bottom-8 md:right-8 z-40 h-14 w-14 rounded-full bg-sky-500 text-neutral-950 shadow-lg flex items-center justify-center text-xl font-medium transition-transform hover:scale-105 ${
+        className={`fixed bottom-5 right-5 md:bottom-8 md:right-8 z-40 h-14 w-14 rounded-full bg-sky-500 text-neutral-950 shadow-lg flex items-center justify-center transition-transform hover:scale-105 ${
           open ? "scale-0" : "scale-100"
         }`}
       >
-        💬
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M4 4.5A1.5 1.5 0 0 1 5.5 3h13A1.5 1.5 0 0 1 20 4.5v10a1.5 1.5 0 0 1-1.5 1.5H9l-4.5 4v-4H5.5A1.5 1.5 0 0 1 4 14.5v-10Z" />
+        </svg>
       </button>
 
       {/* Chat panel */}

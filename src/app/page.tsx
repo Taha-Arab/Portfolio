@@ -142,7 +142,7 @@ export default function Home() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillGroups.map((group, i) => (
             <Reveal key={group.title} delay={(i % 4) * 80}>
-              <div className="rounded-xl border border-neutral-800 hover:border-sky-500 p-6 md:p-8 h-full transition-colors">
+              <div className="group rounded-xl border border-neutral-800 hover:border-sky-500 p-6 md:p-8 h-full transition-colors">
                 <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-300">
                   {group.title}
                 </h3>
@@ -150,7 +150,7 @@ export default function Home() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400 hover:border-sky-500 hover:text-sky-300 hover:bg-sky-500/10 transition-colors"
+                      className="rounded-full border border-neutral-800 px-3 py-1 text-xs text-neutral-400 group-hover:border-sky-500 group-hover:text-sky-300 group-hover:bg-sky-500/10 transition-colors"
                     >
                       {item}
                     </span>
@@ -198,7 +198,7 @@ export default function Home() {
             {honors.map((h) => (
               <li
                 key={h}
-                className="flex gap-3 text-neutral-300 border-b border-neutral-900 hover:border-sky-500 pb-3 transition-colors"
+                className="flex gap-3 text-neutral-300 hover:text-sky-300 border-b border-neutral-900 pb-3 transition-colors"
               >
                 <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-neutral-600" />
                 <span>{h}</span>
