@@ -95,17 +95,16 @@ export default function ChatWidget() {
           open ? "scale-0" : "scale-100"
         }`}
       >
-        <svg
-          width="22"
-          height="22"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.75"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M12 3v6M12 15v6M3 12h6M15 12h6M6 6l4 4M14 14l4 4M18 6l-4 4M10 14l-4 4" />
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.8 3.8a.5.5 0 0 1-.8-.4V16h-.7A2.5 2.5 0 0 1 4 13.5v-8Z"
+            stroke="currentColor"
+            strokeWidth="1.75"
+            strokeLinejoin="round"
+          />
+          <circle cx="8.5" cy="9.5" r="1.1" fill="currentColor" />
+          <circle cx="12" cy="9.5" r="1.1" fill="currentColor" />
+          <circle cx="15.5" cy="9.5" r="1.1" fill="currentColor" />
         </svg>
       </button>
 
