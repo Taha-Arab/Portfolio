@@ -23,7 +23,7 @@ export default function ShowcaseGrid({ items }: { items: ShowcaseItem[] }) {
                 src={item.bgImage}
                 alt=""
                 aria-hidden="true"
-                className="absolute inset-0 -z-10 h-full w-full object-cover opacity-[0.12] transition-opacity duration-300 group-hover:opacity-20"
+                className="absolute inset-0 -z-10 h-full w-full object-cover opacity-[0.18] transition-opacity duration-300 group-hover:opacity-[0.28]"
               />
             )}
             <button
