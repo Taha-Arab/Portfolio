@@ -15,6 +15,7 @@ export type ShowcaseItem = {
   bgImageOpacity?: number;
   bgImageHoverOpacity?: number;
   bgImagePosition?: string;
+  bgImageScale?: number;
   drawer: {
     heading: string;
     body: DrawerSection[];
@@ -174,6 +175,10 @@ export const showcaseItems: ShowcaseItem[] = [
   {
     slug: "automated-sorting-machine",
     kind: "project",
+    bgImage: "/photos/sorting-machine.jpg",
+    bgImageOpacity: 0.3,
+    bgImageHoverOpacity: 0.42,
+    bgImagePosition: "30% 40%",
     title: "Automated Sorting Machine",
     org: "Academic Project — Design-Build-Test",
     period: "Jan 2025 – May 2025",
