@@ -1,7 +1,6 @@
 import ShowcaseGrid from "@/components/ShowcaseGrid";
 import ChatWidget from "@/components/ChatWidget";
 import Reveal from "@/components/Reveal";
-import { TwinHeroButton, TwinBanner } from "@/components/TwinTriggers";
 import { showcaseItems, skillGroups, leadership, honors, education } from "@/lib/data";
 
 export default function Home() {
@@ -76,12 +75,9 @@ export default function Home() {
             >
               Get in touch
             </a>
-            <TwinHeroButton />
           </div>
         </Reveal>
       </section>
-
-      <TwinBanner />
 
       {/* Featured Work */}
       <section id="work" className="mx-auto max-w-5xl px-6 md:px-8 py-16 md:py-20 border-t border-neutral-900">

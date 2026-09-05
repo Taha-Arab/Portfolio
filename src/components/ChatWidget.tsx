@@ -12,6 +12,7 @@ const STARTER: Message = {
 
 export default function ChatWidget() {
   const [open, setOpen] = useState(false);
+  const [showCallout, setShowCallout] = useState(false);
   const [messages, setMessages] = useState<Message[]>([STARTER]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -26,6 +27,15 @@ export default function ChatWidget() {
     window.addEventListener("open-digital-twin", openTwin);
     return () => window.removeEventListener("open-digital-twin", openTwin);
   }, []);
+
+  useEffect(() => {
+    const showTimer = setTimeout(() => setShowCallout(true), 1800);
+    return () => clearTimeout(showTimer);
+  }, []);
+
+  function dismissCallout() {
+    setShowCallout(false);
+  }
 
   async function send() {
     const trimmed = input.trim();
@@ -87,9 +97,33 @@ export default function ChatWidget() {
 
   return (
     <>
+      {/* One-time callout pointing at the chat button */}
+      {!open && (
+        <div
+          className={`fixed bottom-24 right-5 md:bottom-28 md:right-8 z-40 max-w-[220px] transition-all duration-300 ${
+            showCallout ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
+          }`}
+        >
+          <div className="relative rounded-xl bg-neutral-900 border border-sky-500/40 text-neutral-100 text-sm font-medium px-4 py-3 shadow-xl shadow-sky-500/10">
+            <button
+              onClick={dismissCallout}
+              aria-label="Dismiss"
+              className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-neutral-800 border border-neutral-700 text-neutral-400 text-xs flex items-center justify-center hover:bg-neutral-700 hover:text-neutral-100"
+            >
+              ✕
+            </button>
+            <span className="text-sky-400">Curious what I&apos;d say in an interview?</span> Ask my AI digital twin
+            <div className="absolute -bottom-1.5 right-6 h-3 w-3 rotate-45 bg-neutral-900 border-r border-b border-sky-500/40" />
+          </div>
+        </div>
+      )}
+
       {/* Floating action button */}
       <button
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setOpen(true);
+          dismissCallout();
+        }}
         aria-label="Open chat with Taha's digital twin"
         className={`fixed bottom-5 right-5 md:bottom-8 md:right-8 z-40 h-14 w-14 rounded-full bg-sky-500 text-neutral-950 shadow-lg flex items-center justify-center transition-transform hover:scale-105 ${
           open ? "scale-0" : "scale-100"
