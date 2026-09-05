@@ -141,7 +141,7 @@ export const showcaseItems: ShowcaseItem[] = [
     bgImage: "/photos/plane-assembly-dof.jpg",
     bgImageOpacity: 0.45,
     bgImageHoverOpacity: 0.6,
-    bgImagePosition: "80% 55%",
+    bgImagePosition: "100% 55%",
     title: "Fixed-Wing Aircraft Fabrication",
     org: "Academic Project — Design Lead",
     period: "Jan 2025 – May 2025",
