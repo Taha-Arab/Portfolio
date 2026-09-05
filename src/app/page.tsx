@@ -15,9 +15,9 @@ export default function Home() {
           <span className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/photos/headshot.jpg"
+              src="/photos/headshot-nav.jpg"
               alt="Taha Arab"
-              className="h-10 w-10 rounded-full object-cover border border-neutral-700"
+              className="h-11 w-11 rounded-full object-cover border border-neutral-700"
             />
             <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
               Taha Arab
