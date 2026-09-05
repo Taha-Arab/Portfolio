@@ -7,6 +7,20 @@
       "runtimeArgs": ["run", "dev"],
       "port": 3000,
       "autoPort": true
+    },
+    {
+      "name": "portfolio-ui-variations",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "-p", "3001"],
+      "cwd": ".claude/worktrees/portfolio-ui-variations-7805be",
+      "port": 3001
+    },
+    {
+      "name": "variant-changelog",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "-p", "3002"],
+      "cwd": ".claude/worktrees/variant-changelog",
+      "port": 3002
     }
   ]
 }

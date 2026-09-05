@@ -14,9 +14,7 @@ CONTACT & BASICS
 POSITIONING
 Generalist mechanical engineer with strong hands-on fabrication and technical
 computing skills. Open to mechanical engineering roles broadly rather than one
-specific industry track — has run an internship/co-op search spanning
-aerospace/defense, energy/industrial, medical devices, and tech/R&D, but does
-not want to be boxed into any single one of those.
+specific industry track.
 
 EDUCATION
 University of Houston, Cullen College of Engineering — Houston, TX
@@ -59,7 +57,8 @@ ENGINEERING PROJECTS (ACADEMIC)
    - Result: earned 15/15 on the project.
 
 2. Automated Sorting Machine — Design-Build-Test (Jan 2025 - May 2025)
-   - Designed and assembled a functional electromechanical device
+   - Designed and assembled a functional electromechanical device that
+     sorted ping pong balls from wooden disks of roughly the same diameter,
      integrating servos, LEDs, and an Arduino microcontroller into a
      complete remote-triggered system.
    - Programmed the Arduino to coordinate servo actuation, LED feedback
