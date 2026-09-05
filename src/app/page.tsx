@@ -12,8 +12,19 @@ export default function Home() {
       {/* Nav */}
       <header className="border-b border-neutral-900">
         <div className="mx-auto max-w-5xl px-6 md:px-8 py-5 flex items-center justify-between">
-          <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
-            Taha Arab
+          <span className="flex items-center gap-3">
+            <span className="h-11 w-11 rounded-full overflow-hidden border border-neutral-700 block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/photos/headshot-nav-full.jpg"
+                alt="Taha Arab"
+                style={{ transform: "scale(2.9) translate(1%, 6%)", transformOrigin: "center" }}
+                className="h-full w-full object-cover"
+              />
+            </span>
+            <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
+              Taha Arab
+            </span>
           </span>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-neutral-400">
             <a href="#work" className="hover:text-sky-400 transition-colors">Work</a>
@@ -211,7 +222,18 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-5xl px-6 md:px-8 py-16 md:py-24 border-t border-neutral-900">
         <Reveal>
-          <SectionHeading eyebrow="Contact" title="Let's build something." />
+          <div className="flex items-center gap-5">
+            <span className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden border border-neutral-700 shrink-0 block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/photos/headshot-nav-full.jpg"
+                alt="Taha Arab"
+                style={{ transform: "scale(2.45) translate(0%, 3%)", transformOrigin: "center" }}
+                className="h-full w-full object-cover"
+              />
+            </span>
+            <SectionHeading eyebrow="Contact" title="Let's build something." />
+          </div>
           <p className="mt-4 text-neutral-400 max-w-2xl leading-relaxed">
             Open to relocation and eligible for U.S. government/defense contract positions.
             Reach out directly, or ask my digital twin in the chat widget below.
