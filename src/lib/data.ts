@@ -179,7 +179,6 @@ export const showcaseItems: ShowcaseItem[] = [
     bgImageOpacity: 0.3,
     bgImageHoverOpacity: 0.42,
     bgImagePosition: "30% 40%",
-    bgImageScale: 0.82,
     title: "Automated Sorting Machine",
     org: "Academic Project — Design-Build-Test",
     period: "Jan 2025 – May 2025",
