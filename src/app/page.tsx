@@ -17,7 +17,7 @@ export default function Home() {
             <img
               src="/photos/headshot.jpg"
               alt="Taha Arab"
-              className="h-8 w-8 rounded-full object-cover border border-neutral-700"
+              className="h-10 w-10 rounded-full object-cover border border-neutral-700"
             />
             <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
               Taha Arab
@@ -219,7 +219,15 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-5xl px-6 md:px-8 py-16 md:py-24 border-t border-neutral-900">
         <Reveal>
-          <SectionHeading eyebrow="Contact" title="Let's build something." />
+          <div className="flex items-center gap-5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photos/headshot.jpg"
+              alt="Taha Arab"
+              className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover border border-neutral-700 shrink-0"
+            />
+            <SectionHeading eyebrow="Contact" title="Let's build something." />
+          </div>
           <p className="mt-4 text-neutral-400 max-w-2xl leading-relaxed">
             Open to relocation and eligible for U.S. government/defense contract positions.
             Reach out directly, or ask my digital twin in the chat widget below.
