@@ -12,6 +12,8 @@ export type ShowcaseItem = {
   linkLabel?: string;
   featured?: boolean;
   bgImage?: string;
+  bgImageOpacity?: number;
+  bgImageHoverOpacity?: number;
   drawer: {
     heading: string;
     body: DrawerSection[];
@@ -131,6 +133,8 @@ export const showcaseItems: ShowcaseItem[] = [
     slug: "cad-plane-fabrication",
     kind: "project",
     bgImage: "/renders/plane-assembly.png",
+    bgImageOpacity: 0.45,
+    bgImageHoverOpacity: 0.6,
     title: "CAD-Based Plane Fabrication",
     org: "Academic Project — Design Lead",
     period: "Jan 2025 – May 2025",
