@@ -72,7 +72,7 @@ export default function ShowcaseGrid({ items }: { items: ShowcaseItem[] }) {
                 target="_blank"
                 rel="noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="flex items-center justify-center gap-2 border-t border-emerald-500/30 bg-emerald-500/10 px-6 md:px-8 py-4 text-sm font-semibold text-emerald-300 hover:bg-emerald-500 hover:text-neutral-950 hover:border-emerald-500 transition-colors"
+                className="flex items-center justify-center gap-2 border-t border-sky-500/30 bg-sky-500/10 px-6 md:px-8 py-4 text-sm font-semibold text-sky-300 hover:bg-sky-500 hover:text-neutral-950 hover:border-sky-500 transition-colors"
               >
                 {item.linkLabel ?? "View it here"}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -167,7 +167,7 @@ function Drawer({ item, onClose }: { item: ShowcaseItem | null; onClose: () => v
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="group/link inline-flex items-center gap-2 rounded-full bg-emerald-500 text-neutral-950 px-5 py-2.5 text-sm font-semibold hover:bg-emerald-400 transition-colors"
+                  className="group/link inline-flex items-center gap-2 rounded-full bg-sky-500 text-neutral-950 px-5 py-2.5 text-sm font-semibold hover:bg-sky-400 transition-colors"
                 >
                   {item.linkLabel ?? "View it here"}
                   <span className="transition-transform group-hover/link:translate-x-1">→</span>

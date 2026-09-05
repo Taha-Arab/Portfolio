@@ -100,15 +100,15 @@ export default function ChatWidget() {
       {/* One-time callout pointing at the chat button */}
       {!open && (
         <div
-          className={`fixed bottom-24 right-5 md:bottom-28 md:right-8 z-40 max-w-[220px] transition-all duration-300 ${
+          className={`fixed bottom-24 right-5 md:bottom-28 md:right-8 z-40 max-w-[280px] transition-all duration-300 ${
             showCallout ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
           }`}
         >
-          <div className="relative rounded-xl bg-neutral-900 border border-sky-500/40 text-neutral-100 text-sm font-medium px-4 py-3 shadow-xl shadow-sky-500/10">
+          <div className="relative rounded-xl bg-neutral-900 border border-sky-500/40 text-neutral-100 text-base font-medium px-5 py-4 shadow-xl shadow-sky-500/10">
             <button
               onClick={dismissCallout}
               aria-label="Dismiss"
-              className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-neutral-800 border border-neutral-700 text-neutral-400 text-xs flex items-center justify-center hover:bg-neutral-700 hover:text-neutral-100"
+              className="absolute -top-2.5 -right-2.5 h-6 w-6 rounded-full bg-neutral-800 border border-neutral-700 text-neutral-400 text-xs flex items-center justify-center hover:bg-neutral-700 hover:text-neutral-100"
             >
               ✕
             </button>
