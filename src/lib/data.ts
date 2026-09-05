@@ -14,6 +14,7 @@ export type ShowcaseItem = {
   bgImage?: string;
   bgImageOpacity?: number;
   bgImageHoverOpacity?: number;
+  bgImagePosition?: string;
   drawer: {
     heading: string;
     body: DrawerSection[];
@@ -135,6 +136,7 @@ export const showcaseItems: ShowcaseItem[] = [
     bgImage: "/renders/plane-assembly.png",
     bgImageOpacity: 0.45,
     bgImageHoverOpacity: 0.6,
+    bgImagePosition: "75% center",
     title: "Fixed-Wing Aircraft Fabrication",
     org: "Academic Project — Design Lead",
     period: "Jan 2025 – May 2025",

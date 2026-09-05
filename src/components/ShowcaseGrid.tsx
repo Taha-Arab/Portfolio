@@ -26,6 +26,7 @@ export default function ShowcaseGrid({ items }: { items: ShowcaseItem[] }) {
                 style={{
                   ["--bg-hover-opacity" as string]: item.bgImageHoverOpacity ?? 0.28,
                   opacity: item.bgImageOpacity ?? 0.18,
+                  objectPosition: item.bgImagePosition ?? "center",
                 }}
                 className="absolute inset-0 -z-10 h-full w-full object-cover transition-opacity duration-300 group-hover:opacity-[var(--bg-hover-opacity)]"
               />
