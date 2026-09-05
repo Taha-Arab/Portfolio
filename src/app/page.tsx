@@ -12,8 +12,16 @@ export default function Home() {
       {/* Nav */}
       <header className="border-b border-neutral-900">
         <div className="mx-auto max-w-5xl px-6 md:px-8 py-5 flex items-center justify-between">
-          <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
-            Taha Arab
+          <span className="flex items-center gap-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photos/headshot.jpg"
+              alt="Taha Arab"
+              className="h-8 w-8 rounded-full object-cover border border-neutral-700"
+            />
+            <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
+              Taha Arab
+            </span>
           </span>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-neutral-400">
             <a href="#work" className="hover:text-sky-400 transition-colors">Work</a>
