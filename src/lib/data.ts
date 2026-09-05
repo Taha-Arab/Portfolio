@@ -12,6 +12,9 @@ export type ShowcaseItem = {
   linkLabel?: string;
   featured?: boolean;
   bgImage?: string;
+  bgImageOpacity?: number;
+  bgImageHoverOpacity?: number;
+  bgImagePosition?: string;
   drawer: {
     heading: string;
     body: DrawerSection[];
@@ -130,16 +133,20 @@ export const showcaseItems: ShowcaseItem[] = [
   {
     slug: "cad-plane-fabrication",
     kind: "project",
-    title: "CAD-Based Plane Fabrication",
+    bgImage: "/renders/plane-assembly.png",
+    bgImageOpacity: 0.45,
+    bgImageHoverOpacity: 0.6,
+    bgImagePosition: "62% center",
+    title: "Fixed-Wing Aircraft Fabrication",
     org: "Academic Project — Design Lead",
     period: "Jan 2025 – May 2025",
     metric: "15/15",
     metricLabel: "Project score",
     summary:
-      "Led SolidWorks modeling and tolerance analysis for a 4-person team, translating design requirements into fabricated components that met every weight and clearance spec.",
-    tools: ["SolidWorks", "Tolerance Analysis", "3D Printing", "CNC Machining", "Laser Cutting"],
+      "Led design and fabrication for a 4-person team — translating SolidWorks models into 3D-printed, CNC-machined, and laser-cut components that met every weight and clearance spec.",
+    tools: ["3D Printing", "CNC Machining", "Laser Cutting", "SolidWorks", "Tolerance Analysis"],
     drawer: {
-      heading: "CAD-Based Plane Fabrication",
+      heading: "Fixed-Wing Aircraft Fabrication",
       body: [
         {
           label: "Role",
