@@ -223,12 +223,15 @@ export default function Home() {
       <section id="contact" className="mx-auto max-w-5xl px-6 md:px-8 py-16 md:py-24 border-t border-neutral-900">
         <Reveal>
           <div className="flex items-center gap-5">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/photos/headshot.jpg"
-              alt="Taha Arab"
-              className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover border border-neutral-700 shrink-0"
-            />
+            <span className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden border border-neutral-700 shrink-0 block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/photos/headshot-nav-full.jpg"
+                alt="Taha Arab"
+                style={{ transform: "scale(2.45) translate(0%, 3%)", transformOrigin: "center" }}
+                className="h-full w-full object-cover"
+              />
+            </span>
             <SectionHeading eyebrow="Contact" title="Let's build something." />
           </div>
           <p className="mt-4 text-neutral-400 max-w-2xl leading-relaxed">
