@@ -130,6 +130,7 @@ export const showcaseItems: ShowcaseItem[] = [
   {
     slug: "cad-plane-fabrication",
     kind: "project",
+    bgImage: "/renders/plane-assembly.png",
     title: "CAD-Based Plane Fabrication",
     org: "Academic Project — Design Lead",
     period: "Jan 2025 – May 2025",
