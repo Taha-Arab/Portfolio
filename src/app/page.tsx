@@ -13,12 +13,15 @@ export default function Home() {
       <header className="border-b border-neutral-900">
         <div className="mx-auto max-w-5xl px-6 md:px-8 py-5 flex items-center justify-between">
           <span className="flex items-center gap-3">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/photos/headshot-nav.jpg"
-              alt="Taha Arab"
-              className="h-11 w-11 rounded-full object-cover border border-neutral-700"
-            />
+            <span className="h-11 w-11 rounded-full overflow-hidden border border-neutral-700 block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/photos/headshot-nav-full.jpg"
+                alt="Taha Arab"
+                style={{ transform: "scale(2.9) translate(1%, 6%)", transformOrigin: "center" }}
+                className="h-full w-full object-cover"
+              />
+            </span>
             <span className="text-sm font-medium tracking-widest uppercase text-neutral-400">
               Taha Arab
             </span>
