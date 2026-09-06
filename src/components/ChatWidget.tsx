@@ -23,12 +23,6 @@ export default function ChatWidget() {
   }, [messages, loading]);
 
   useEffect(() => {
-    const openTwin = () => setOpen(true);
-    window.addEventListener("open-digital-twin", openTwin);
-    return () => window.removeEventListener("open-digital-twin", openTwin);
-  }, []);
-
-  useEffect(() => {
     const showTimer = setTimeout(() => setShowCallout(true), 1800);
     return () => clearTimeout(showTimer);
   }, []);
@@ -165,7 +159,7 @@ export default function ChatWidget() {
                 TA
               </div>
               <div>
-                <p className="text-sm font-medium text-neutral-100">Taha's Digital Twin</p>
+                <p className="text-sm font-medium text-neutral-100">Taha&apos;s Digital Twin</p>
                 <p className="text-xs text-neutral-500">Ask about his work &amp; projects</p>
               </div>
             </div>
