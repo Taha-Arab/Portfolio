@@ -91,8 +91,8 @@ export const showcaseItems: ShowcaseItem[] = [
     title: "Outpost — Tactical Arena FPS",
     org: "Personal Project — Solo Developer",
     period: "Self-directed, ongoing",
-    metric: "Zero",
-    metricLabel: "External game engine",
+    metric: "1v1–5v5",
+    metricLabel: "Custom multiplayer AI, no engine",
     summary:
       "A browser-native tactical shooter built from scratch with Three.js and Rapier — no game engine, no backend. Custom physics-based movement, hitscan combat, and team-based AI opponents across 1v1 to 5v5 matches, shipped as a static site.",
     tools: [

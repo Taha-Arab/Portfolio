@@ -150,7 +150,7 @@ export default function ChatWidget() {
 
         <div
           className={`absolute bottom-0 right-0 w-full h-[85dvh] md:h-[600px] md:bottom-6 md:right-6 md:w-[380px] md:rounded-2xl rounded-t-2xl bg-neutral-950 border border-neutral-800 shadow-2xl flex flex-col transition-transform duration-300 ease-out ${
-            open ? "translate-y-0" : "translate-y-full"
+            open ? "translate-y-0" : "translate-y-[110%]"
           }`}
         >
           <div className="flex items-center justify-between border-b border-neutral-800 p-4 md:p-5">
