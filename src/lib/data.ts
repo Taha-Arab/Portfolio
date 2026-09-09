@@ -91,8 +91,8 @@ export const showcaseItems: ShowcaseItem[] = [
     title: "Outpost — Tactical Arena FPS",
     org: "Personal Project — Solo Developer",
     period: "Self-directed, ongoing",
-    metric: "~9K",
-    metricLabel: "Lines of custom JS",
+    metric: "Zero",
+    metricLabel: "External game engine",
     summary:
       "A browser-native tactical shooter built from scratch with Three.js and Rapier — no game engine, no backend. Custom physics-based movement, hitscan combat, and team-based AI opponents across 1v1 to 5v5 matches, shipped as a static site.",
     tools: [
@@ -216,60 +216,6 @@ export const showcaseItems: ShowcaseItem[] = [
       ],
     },
   },
-  {
-    slug: "material-science-lab",
-    kind: "project",
-    title: "Material Science & Lab",
-    org: "Coursework — Applied Materials Testing",
-    period: "University of Houston",
-    metric: "6+",
-    metricLabel: "Test methods",
-    summary:
-      "Hands-on lab work across mechanical and materials testing methods, from tensile and fatigue testing to corrosion analysis and heat treatment.",
-    tools: ["Tensile Testing", "Fatigue Testing", "Charpy Impact", "Corrosion Analysis"],
-    drawer: {
-      heading: "Material Science & Lab",
-      body: [
-        {
-          label: "Hands-On Labs",
-          bullets: [
-            "Tensile testing",
-            "Fatigue testing",
-            "Creep testing",
-            "Charpy impact testing",
-            "Corrosion analysis",
-            "Recrystallization",
-            "Age hardening",
-            "Heat treatment",
-          ],
-        },
-      ],
-    },
-  },
-  {
-    slug: "numerical-analysis-matlab",
-    kind: "project",
-    title: "Numerical Analysis for Scientific Computing",
-    org: "Coursework — MATLAB",
-    period: "University of Houston",
-    metric: "MATLAB",
-    metricLabel: "Primary tool",
-    summary:
-      "Implemented core numerical methods in MATLAB — root-finding, integration, interpolation, and iterative solvers — applied to linear algebra and matrix-based problems.",
-    tools: ["MATLAB", "Numerical Methods", "Linear Algebra"],
-    drawer: {
-      heading: "Numerical Analysis for Scientific Computing",
-      body: [
-        {
-          label: "What I Implemented",
-          bullets: [
-            "Numerical methods in MATLAB: root-finding, numerical integration, polynomial interpolation, iterative linear solvers.",
-            "Applied linear algebra and matrix operations computationally — relevant to eigenvector-based techniques, simulation, and regression.",
-          ],
-        },
-      ],
-    },
-  },
 ];
 
 export const skillGroups = [
@@ -349,7 +295,7 @@ export const leadership = [
     role: "Public Speaking & Content",
     period: "Aug 2023 – Present",
     bullets: [
-      "Delivers monthly talks/sermons to live audiences of up to 800 people.",
+      "Delivers monthly talks to live audiences of up to 800 people.",
       "Manages a YouTube channel generating 15,000+ views.",
     ],
   },

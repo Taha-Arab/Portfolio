@@ -56,9 +56,10 @@ export default function Home() {
         </Reveal>
         <Reveal delay={160}>
           <p className="mt-6 text-lg text-neutral-400 max-w-2xl leading-relaxed">
-            Senior at the University of Houston, Cullen College of Engineering. Equipped to step into
-            whatever a team is building, backed by real fabrication, testing, and computational
-            engineering experience.
+            Senior at the University of Houston, Cullen College of Engineering. Root-caused and
+            redesigned a failing bearing system at INEOS, led fabrication on a 4-person aircraft
+            build, and built a physics engine from scratch — engineering that goes past the
+            classroom.
           </p>
         </Reveal>
         <Reveal delay={240}>
@@ -237,9 +238,6 @@ export default function Home() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 text-neutral-300">
             <a href="mailto:tahaarab05@gmail.com" className="hover:text-sky-400 transition-colors">
               tahaarab05@gmail.com
-            </a>
-            <a href="tel:+18327696022" className="hover:text-sky-400 transition-colors">
-              (832) 769-6022
             </a>
             <a
               href="https://www.linkedin.com/in/taha-arab"

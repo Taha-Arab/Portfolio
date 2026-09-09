@@ -109,7 +109,7 @@ LEADERSHIP & EXTRACURRICULAR
 - Flipfellas — Co-Founder (May 2023 - Present). Launched an e-commerce
   operation on Facebook Marketplace. Analyzed sales data to identify
   emerging product trends and optimize sourcing strategy.
-- Community Speaker (Aug 2023 - Present). Delivers monthly talks/sermons to
+- Community Speaker (Aug 2023 - Present). Delivers monthly talks to
   live audiences of up to 800 people. Manages a YouTube channel generating
   15,000+ views.
 
