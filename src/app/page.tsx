@@ -232,8 +232,7 @@ export default function Home() {
             <SectionHeading eyebrow="Contact" title="Let's build something." />
           </div>
           <p className="mt-4 text-neutral-400 max-w-2xl leading-relaxed">
-            Open to relocation and eligible for U.S. government/defense contract positions.
-            Reach out directly, or ask my digital twin in the chat widget below.
+            Open to relocation. Reach out directly, or ask my digital twin in the chat widget below.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 text-neutral-300">
             <a href="mailto:tahaarab05@gmail.com" className="hover:text-sky-400 transition-colors">

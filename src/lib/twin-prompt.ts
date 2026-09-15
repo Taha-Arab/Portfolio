@@ -7,7 +7,7 @@ CONTACT & BASICS
 - Name: Taha Arab
 - Location: Sugar Land, TX
 - Email: tahaarab05@gmail.com
-- U.S. Citizen, eligible for government/defense contract positions
+- U.S. Citizen
 - Open to relocation
 - LinkedIn: www.linkedin.com/in/taha-arab
 
